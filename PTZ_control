@@ -1,5 +1,20 @@
 /*
-The camera has disadvantages. The camera is a very bad imitation of the HW0054 camera. The camera is not compatible with ONVIF. The configuration from the web browser is different than from the Android application. PTZ control from a web browser has errors, it is reverse. Instead of down is up, instead of left is right. After a month the sound broke. The purchase was a waste of money. 
+The camera has disadvantages. 
+The camera is a very bad imitation of the HW0054 camera. 
+The camera is not compatible with ONVIF. 
+The configuration from the web browser is different than from the Android application. 
+PTZ control from a web browser has errors, it is reverse. Instead of down is up, instead of left is right. 
+After a month the sound broke. 
+The purchase was a waste of money. 
 */
 
-# PTZ
+# Example PTZ
+curl -X POST -u "admin:pswd" -d "opType=set&cmd=ptz&ptz_cmd=3" http://192.168.0.90/cgi-bin/cmd.cgi 
+
+# set preset
+curl -X POST -u "admin:pswd" -d "opType=goto&edit_index=0" http://192.168.0.90/cgi-bin/editpreset.cgi
+curl -X POST -u "admin:pswd" -d "opType=goto&edit_index=1" http://192.168.0.90/cgi-bin/editpreset.cgi
+curl -X POST -u "admin:pswd" -d "opType=goto&edit_index=2" http://192.168.0.90/cgi-bin/editpreset.cgi
+
+# delete preset
+curl -X POST -u "admin:pswd" -d "opType=del_one&edit_index=2" http://192.168.0.90/cgi-bin/editpreset.cgi
