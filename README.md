@@ -6,4 +6,4 @@ PTZ control from a web browser has errors, it is reverse. Instead of down is up,
 After a month the sound broke. 
 The purchase was a waste of money. 
 
-View of errors of camera: https://studio.youtube.com/video/MVo9KJo9NRk
+View of errors of camera: https://www.youtube.com/watch?v=MVo9KJo9NRk
